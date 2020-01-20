@@ -1,0 +1,14 @@
+.menuContainer {
+    text-align: center;
+    padding: 60px;
+    width: 40%;
+    margin: auto;
+    .menuItem {
+        text-decoration: none;
+        padding-left:10px;
+        padding-right: 10px;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}

@@ -1,21 +1,8 @@
 import React, { useEffect, useState } from 'react';
+import useNetwork from './useNetwork';
 
 function CustomHook() {
-    const [network, setNetwork] = useState('not connected');
-    /**
-     * @description
-     */
-    useEffect(() => {
-        return () => {
-
-        }
-    });
-    useEffect(() => {
-        const connection = navigator.connection || navigator.mozConnection || navigator.webkitConnection;
-        if (connection) {
-            setNetwork(connection.type);
-        }
-    }, []);
-return <div>{network}</div>
+    const network = useNetwork();
+    return <div className="itemContainer">{network}</div>;
 }
 export default CustomHook;

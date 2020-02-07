@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import Container from '../components/container';
 function FunctionalComponent() {
     const [counter, setCounter] = useState(0);
     const handleIncrement = () => {
@@ -8,13 +8,13 @@ function FunctionalComponent() {
     const handleDecrement = () => {
         setCounter(counter - 1);
     }
-    return (<div className="itemContainer">
+    return (<Container>
         <h3>Functional Component </h3>
         {counter}
         <div className="actions">
             <button onClick={handleIncrement}>Increment</button>
             <button onClick={handleDecrement}>Decrement</button>
         </div>
-    </div>);
+    </Container>);
 }
 export default FunctionalComponent;

@@ -1,8 +1,11 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
+import Container from '../components/container';
 import useNetwork from './useNetwork';
 
 function CustomHook() {
     const network = useNetwork();
-    return <div className="itemContainer">{network}</div>;
+    return <Container>
+                <h3>Custom Hook </h3>
+        Current Network Type {network}</Container>;
 }
 export default CustomHook;

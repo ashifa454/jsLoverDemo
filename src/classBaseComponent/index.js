@@ -1,5 +1,5 @@
 import React from 'react';
-import './style.scss';
+import Container from '../components/container';
 
 class CustomComponent extends React.Component {
     state = {
@@ -15,7 +15,7 @@ class CustomComponent extends React.Component {
     }
     render() {
         const { counter } = this.state;
-        return <div className="itemContainer">
+        return <Container>
             <h3>Basic Component </h3>
             <div>{counter}</div>
             <div className="actions">
@@ -25,7 +25,7 @@ class CustomComponent extends React.Component {
                 <button onClick={this.handleDecrement}>
                     Decrement
             </button>
-            </div></div>
+            </div></Container>
     }
 }
 export default CustomComponent;

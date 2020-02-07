@@ -1,6 +1,7 @@
 import React from 'react';
+import Container from '../components/container';
 
 function contextExample() {
-    return <div>I AM CONTEXT API</div>
+    return <Container>I AM CONTEXT API</Container>
 }
 export default contextExample;

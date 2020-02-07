@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import Container from '../components/container';
-import './style.scss';
 
 function PredefinedHook(props) {
     const [width, setWidth] = useState(window.innerWidth);
@@ -25,6 +24,8 @@ function PredefinedHook(props) {
     useEffect(() => {
 
     })
-    return <Container>Width : {width}</Container>
+    return <Container>
+        <h3>Predefined Hook </h3>
+        Width : {width}</Container>
 }
 export default PredefinedHook;
